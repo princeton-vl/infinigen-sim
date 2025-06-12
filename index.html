@@ -80,22 +80,22 @@
               <a href="https://hermera.github.io/">Hongyu Wen</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://stamatisalex.github.io/">Stamatis Alexandropoulos</a><sup>1</sup>
+              <a href="https://stamatisalex.github.io/">Stamatis Alexandropoulos</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Tao Sun</a><sup>1,2</sup>
+              <a href="">Tao Sun</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://araistrick.github.io/">Alexander Raistrick</a><sup>1</sup>
+              <a href="https://araistrick.github.io/">Alexander Raistrick</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Gaowen Liu</a><sup>3</sup>
+              <a href="">Gaowen Liu</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.mcgill.ca/civil/yi-shao">Yi Shao</a><sup>2</sup>
+              <a href="https://www.mcgill.ca/civil/yi-shao">Yi Shao</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a><sup>1</sup>
+              <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a><sup>1</sup>,
             </span>
           </div>
 
@@ -109,16 +109,9 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2505.10755"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -169,7 +162,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/infinigen_sim.mp4"
                 type="video/mp4">
       </video>
     </div>
@@ -202,67 +195,102 @@
 </section>
 
 <section class="section">
+  <div class="gif-row">
+    <img src="static/images/door_1.gif" alt="Articulated door 1">
+    <img src="static/images/door_2.gif" alt="Articulated door 2">
+    <img src="static/images/door_3.gif" alt="Articulated door 3">
+    <img src="static/images/door_4.gif" alt="Articulated door 4">
+    <img src="static/images/door_5.gif" alt="Articulated door 5">
+    <img src="static/images/door_6.gif" alt="Articulated door 6">
+  </div>
+  <div class="gif-row">
+    <img src="static/images/fridge_1.gif" alt="Articulated fridge 1">
+    <img src="static/images/fridge_3.gif" alt="Articulated fridge 3">
+    <img src="static/images/fridge_4.gif" alt="Articulated fridge 4">
+    <img src="static/images/fridge_2.gif" alt="Articulated fridge 2">
+    <img src="static/images/fridge_5.gif" alt="Articulated fridge 5">
+    <img src="static/images/fridge_6.gif" alt="Articulated fridge 6">
+  </div>
+</body>
+</section>
+
+<section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Procedurally Generated Simulation Assets</h2>
+          <h2 class="title is-3">Built on Blender Geometry and Shader Nodes</h2>
           <p>
-            With Infinigen-Sim, we have created procedural generators for doors, toasters, 
-            refrigerators, dishwashers, and lamps. We're actively expanding support with 
-            the goal of covering all articulated object types. Each generated asset can 
-            be exported to simulation-ready formats like URDF, USD, or MJCF using our 
-            built-in tools.
+            Infinigen-Sim extends Blender Geometry and Shader Nodes, a popular artist-friendly system designed for
+            procedural generation. This system allows users to model meshes and materials by composing primitives,
+            geometric transformations, and arithmetic operations represented as nodes in a directed graph. 
           </p>
-          <!-- articulated assets moving video here -->
+          <div class="columns is-centered">
+              <img src="static/images/blender_demo.gif" alt="Blender demo" style="width: 80%; padding-top: 30px;">
+          </div>
+        </div>
+      </div>
+      
+     
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Key Advantages</h2>
           <p>
-            Infinigen-Sim gives users full control over asset creation, enabling the design 
-            of detailed articulated objects with accurate joint configurations and high 
-            visual fidelity. Assets can also leverage Infinigen's procedural material 
-            library to introduce rich visual diversity.
+            Infinigen-Sim offers several key advantages. 
+            <ol>
+              <li><strong>Accurate Joints and Highly Detailed Assets</strong>: Assets in Infinigen-Sim are procedurally generated, giving us full control over every part and joint. This ensures correct joint configurations by design. Infinigen-Sim also supports high-detail modeling, enabling the inclusion of small, articulated components.</li>
+              <li><strong>Unlimited Kinematic Variation</strong>: Users can define custom parameter distributions to vary asset properties that affect downstream performance. For example, the distance between a door handle and the door hinge influences a robot's trajectory. By adjusting this parameter, users can generate a diverse set of door configurations that promote more robust policies.</li>
+              <li><strong>Combinatorial Coverage</strong>: Many asset parameters can be varied independently, allowing Infinigen-Sim to generate a wide and diverse range of asset configurations. This independence enables combinatorial diversity, making it possible to systematically explore how individual factors influence downstream performance in robot learning tasks.</li>
+            </ol>
           </p>
+          <p>
+            We also highlight some advantages of our system compared to previous methods below.
+          </p>
+          <div class="columns is-centered">
+            <img src="static/images/advantages.png" alt="Advantages">
+          </div>
         </div>
       </div>
   </div>
 </section>
 
 
-<section class="section"></section>
+<section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Create Your Own Assets</h2>
+          <h2 class="title is-3">DIY Assets for Custom Tasks</h2>
           <p>
-            Infinigen-Sim also lets users create custom procedural sim-ready assets for their own tasks. 
-            This can be done in three steps. 
+            Along with the assets we provide, Infinigen-Sim also lets users create custom procedural sim-ready assets for their own tasks. This can be done in three steps. 
           </p>
           <h4>Step 1</h4>
           <p>
-            Using Blender Geometry Nodes, a node-based proceudral 
-            generation tool, users can build asset generators for their particular task. To introduce 
-            articulations, we create custom joint nodes for both revolute and sliding joints. 
-            
-            <!-- These joints
-            allow users to visualize their articulations directly within the Blender UI, making it easier to 
-            construct and debug their procedural generators. As Blender Geometry Nodes is a widely adopted 
-            tool in the 3D modeling community, several tutorials exist online to help users become comfortable 
-            with creating procedural assets.  -->
+            Build a procedural generator using Blender Geometry Nodes for a particular asset. To introduce articulation, Infinigen-Sim provides custom joint nodes for both revolute and sliding joints. These nodes can be seamlessly integrated into node graphs to create articulated assets that are compatible with popular simulation frameworks like MuJoCo, Isaac, Sapien, PyBullet, and more. For materials and textures, users can apply predefined options from Infinigen or define their own using Shader Nodes.
           </p> 
 
           <h4>Step 2</h4>
           <p>
-            Users can then define their parameter distributions.
+            Define you custom parameter distributions for you asset.
           </p> 
 
           <h4>Step 3</h4>
           <p>
-            Finally, using Infinigen-Sim, users can spawn an instance of their assets an export to the simulation
-            format of their choice.
+            Finally, using Infinigen-Sim, automatically spawn an instance of the asset and export to the simulation
+            format of choice.
           </p> 
           </p>
         </div>
@@ -271,7 +299,7 @@
   </div>
 </section>
 
-<section class="section"></section>
+<section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -280,10 +308,14 @@
         <div class="content">
           <h2 class="title is-3">Sim-to-Real Results</h2>
           <p>
-            Infinigen-Sim also lets users create custom procedural sim-ready assets for their own tasks. 
-            This can be done in three steps. 
+            Through Infinigen-Sim, we see a significant boost in performance for opening doors in the real world. The task for the robot is to first turn the handle and then push the door open. We train an ACT (Zhao et al., 2023) policy using trajectories collected using a motion planner in simulation. We saw that a policy trained using purely Infinigen-Sim assets achieved a success rate of 70% in the real world while a policy trained on baseline assets from PartNet-Mobility (Xiang et al., 2020) achieved a 0% success rate.
           </p>          
           </p>
+        </div>
+        <div class="gif-row">
+          <img src="static/images/real_2.gif" alt="Real demo 2" style="width: 30%;">
+          <img src="static/images/real_1.gif" alt="Real demo 1" style="width: 30%;">
+          <img src="static/images/real_3.gif" alt="Real demo 3" style="width: 30%;">
         </div>
 
       </div>
@@ -293,11 +325,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@misc{joshi2025infinigensimproceduralgenerationarticulated,
+      title={Infinigen-Sim: Procedural Generation of Articulated Simulation Assets}, 
+      author={Abhishek Joshi and Beining Han and Jack Nugent and Yiming Zuo and Jonathan Liu and Hongyu Wen and Stamatis Alexandropoulos and Tao Sun and Alexander Raistrick and Gaowen Liu and Yi Shao and Jia Deng},
+      year={2025},
+      eprint={2505.10755},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2505.10755}, 
 }</code></pre>
   </div>
 </section>
@@ -310,39 +345,6 @@
     </p>
   </div>
 </div>
-
-
-<!-- <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
 
 </body>
 </html>

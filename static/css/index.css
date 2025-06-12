@@ -163,3 +163,13 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.gif-row img {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+}
