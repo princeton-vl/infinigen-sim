@@ -7,7 +7,7 @@
   <meta name="keywords" content="Robot Simulation, Articulated Objects, Procedural Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Infinigen-Sim: Procedural Generation of Articulated Simulation Assets</title>
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="static/images/princeton-vl.png">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -131,13 +131,13 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/princeton-vl/infinigen"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
-                  </a>
+                  <span>Code</span>
+                </a>
               </span>
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
@@ -158,15 +158,46 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/infinigen_sim.mp4"
-                type="video/mp4">
-      </video>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h4 class="title is-4">Generate unlimited articulated objects compatible with Isaac, MuJoCo, ManiSkill3, and many other simulation frameworks!</h4>
+        <a href="https://github.com/princeton-vl/infinigen/blob/main/docs/ExportingToSimulators.md"
+            class="external-link button is-normal is-rounded is-dark">
+          <span>Getting Started</span>
+        </a>
+      </div>
     </div>
   </div>
+</section>
+
+<section class="section">
+  <div class="gif-row">
+    <img src="static/images/door_1.gif" alt="Articulated door 1">
+    <img src="static/images/door_2.gif" alt="Articulated door 2">
+    <img src="static/images/door_3.gif" alt="Articulated door 3">
+    <img src="static/images/door_4.gif" alt="Articulated door 4">
+    <img src="static/images/door_5.gif" alt="Articulated door 5">
+    <img src="static/images/door_6.gif" alt="Articulated door 6">
+  </div>
+  <div class="gif-row">
+    <img src="static/images/fridge_1.gif" alt="Articulated fridge 1">
+    <img src="static/images/fridge_3.gif" alt="Articulated fridge 3">
+    <img src="static/images/fridge_4.gif" alt="Articulated fridge 4">
+    <img src="static/images/fridge_2.gif" alt="Articulated fridge 2">
+    <img src="static/images/fridge_5.gif" alt="Articulated fridge 5">
+    <img src="static/images/fridge_6.gif" alt="Articulated fridge 6">
+  </div>
+  <div class="gif-row">
+    <img src="static/images/toaster_1.gif" alt="Articulated toaster 1">
+    <img src="static/images/toaster_3.gif" alt="Articulated toaster 3">
+    <img src="static/images/toaster_4.gif" alt="Articulated toaster 4">
+    <img src="static/images/toaster_2.gif" alt="Articulated toaster 2">
+    <img src="static/images/toaster_5.gif" alt="Articulated toaster 5">
+    <img src="static/images/toaster_6.gif" alt="Articulated toaster 6">
+  </div>
+</body>
 </section>
 
 <section class="section">
@@ -194,24 +225,16 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="gif-row">
-    <img src="static/images/door_1.gif" alt="Articulated door 1">
-    <img src="static/images/door_2.gif" alt="Articulated door 2">
-    <img src="static/images/door_3.gif" alt="Articulated door 3">
-    <img src="static/images/door_4.gif" alt="Articulated door 4">
-    <img src="static/images/door_5.gif" alt="Articulated door 5">
-    <img src="static/images/door_6.gif" alt="Articulated door 6">
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/infinigen_sim.mp4"
+                type="video/mp4">
+      </video>
+    </div>
   </div>
-  <div class="gif-row">
-    <img src="static/images/fridge_1.gif" alt="Articulated fridge 1">
-    <img src="static/images/fridge_3.gif" alt="Articulated fridge 3">
-    <img src="static/images/fridge_4.gif" alt="Articulated fridge 4">
-    <img src="static/images/fridge_2.gif" alt="Articulated fridge 2">
-    <img src="static/images/fridge_5.gif" alt="Articulated fridge 5">
-    <img src="static/images/fridge_6.gif" alt="Articulated fridge 6">
-  </div>
-</body>
 </section>
 
 <section class="section">
@@ -221,20 +244,17 @@
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Built on Blender Geometry and Shader Nodes</h2>
-          <p>
-            Infinigen-Sim extends Blender Geometry and Shader Nodes, a popular artist-friendly system designed for
-            procedural generation. This system allows users to model meshes and materials by composing primitives,
-            geometric transformations, and arithmetic operations represented as nodes in a directed graph. 
-          </p>
-          <div class="columns is-centered">
-              <img src="static/images/blender_demo.gif" alt="Blender demo" style="width: 80%; padding-top: 30px;">
-          </div>
+          <h2 class="title is-3">Provided Articulated Asset Categories</h2>
+          We've provided procedural generators for 5 articulated asset categories: <strong>doors, dishwashers, lamps, refrigerators, and toasters</strong>.
+        </div>
+        <div class="gif-row">
+          <img src="static/images/door_7.gif" alt="Articulated door 7">
+          <img src="static/images/dishwasher_1.gif" alt="Articulated dishwasher 1">
+          <img src="static/images/lamp_1.gif" alt="Articulated lamp 1">
+          <img src="static/images/fridge_7.gif" alt="Articulated fridge 7">
+          <img src="static/images/toaster_7.gif" alt="Articulated toaster 7">
         </div>
       </div>
-      
-     
-
   </div>
 </section>
 
@@ -247,25 +267,46 @@
         <div class="content">
           <h2 class="title is-3">Key Advantages</h2>
           <p>
-            Infinigen-Sim offers several key advantages. 
             <ol>
               <li><strong>Accurate Joints and Highly Detailed Assets</strong>: Assets in Infinigen-Sim are procedurally generated, giving us full control over every part and joint. This ensures correct joint configurations by design. Infinigen-Sim also supports high-detail modeling, enabling the inclusion of small, articulated components.</li>
               <li><strong>Unlimited Kinematic Variation</strong>: Users can define custom parameter distributions to vary asset properties that affect downstream performance. For example, the distance between a door handle and the door hinge influences a robot's trajectory. By adjusting this parameter, users can generate a diverse set of door configurations that promote more robust policies.</li>
               <li><strong>Combinatorial Coverage</strong>: Many asset parameters can be varied independently, allowing Infinigen-Sim to generate a wide and diverse range of asset configurations. This independence enables combinatorial diversity, making it possible to systematically explore how individual factors influence downstream performance in robot learning tasks.</li>
             </ol>
           </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Creating Your Own Procedural Articulated Assets</h2>
           <p>
-            We also highlight some advantages of our system compared to previous methods below.
+            Infinigen-Sim extends Blender Geometry and Shader Nodes, a popular artist-friendly system designed for
+            procedural generation. This system allows you to model meshes and materials by composing primitives,
+            geometric transformations, and arithmetic operations represented as nodes in a directed graph. Assets 
+            can be made in three easy steps:
+            <ol>
+              <li>Create your articulated asset in Blender using our custom joint nodes.</li>
+              <li>Define custom parameter distributions.</li>
+              <li>Export to your simulation format of choice using Infinigen-Sim.</li>
+            </ol>
+            
+            More information on how to create your own custom assets coming soon!
           </p>
           <div class="columns is-centered">
-            <img src="static/images/advantages.png" alt="Advantages">
+              <img src="static/images/blender_demo.gif" alt="Blender demo" style="width: 80%; padding-top: 30px;">
           </div>
         </div>
       </div>
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -273,40 +314,7 @@
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">DIY Assets for Custom Tasks</h2>
-          <p>
-            Along with the assets we provide, Infinigen-Sim also lets users create custom procedural sim-ready assets for their own tasks. This can be done in three steps. 
-          </p>
-          <h4>Step 1</h4>
-          <p>
-            Build a procedural generator using Blender Geometry Nodes for a particular asset. To introduce articulation, Infinigen-Sim provides custom joint nodes for both revolute and sliding joints. These nodes can be seamlessly integrated into node graphs to create articulated assets that are compatible with popular simulation frameworks like MuJoCo, Isaac, Sapien, PyBullet, and more. For materials and textures, users can apply predefined options from Infinigen or define their own using Shader Nodes.
-          </p> 
-
-          <h4>Step 2</h4>
-          <p>
-            Define you custom parameter distributions for you asset.
-          </p> 
-
-          <h4>Step 3</h4>
-          <p>
-            Finally, using Infinigen-Sim, automatically spawn an instance of the asset and export to the simulation
-            format of choice.
-          </p> 
-          </p>
-        </div>
-
-      </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Sim-to-Real Results</h2>
+          <h2 class="title is-3">Successful Sim-to-Real</h2>
           <p>
             Through Infinigen-Sim, we see a significant boost in performance for opening doors in the real world. The task for the robot is to first turn the handle and then push the door open. We train an ACT (Zhao et al., 2023) policy using trajectories collected using a motion planner in simulation. We saw that a policy trained using purely Infinigen-Sim assets achieved a success rate of 70% in the real world while a policy trained on baseline assets from PartNet-Mobility (Xiang et al., 2020) achieved a 0% success rate.
           </p>          
